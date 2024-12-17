@@ -4,6 +4,9 @@
 	import Navbar from '$lib/Navbar.svelte';
 	import Hero from '$lib/Hero.svelte';
 	import Bio from '$lib/Bio.svelte';
+	import Footer from '$lib/Footer.svelte';
 </script>
 <Navbar />
+<Hero />
 <Bio />
+<Footer />
