@@ -8,3 +8,22 @@
 	--bulma-radius-large: 2rem;
 }
 
+.-mt-large {
+	margin-top: -6rem;
+}
+
+.is-great-vibes {
+	font-family: 'Great Vibes';
+	line-height: 1.25em;
+	font-weight: 800;
+}
+
+.has-drop-shadow {
+	filter: drop-shadow(1px 1px 0.25rem black);
+}
+
+@media screen and (max-width: 1023px) {
+    .-mt-large {
+        margin-top: -3rem;
+    }
+}
