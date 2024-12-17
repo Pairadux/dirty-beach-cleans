@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { base } from '$app/paths';
 	import { assets } from '$app/paths';
 
 	let navActive = false;
@@ -19,7 +20,6 @@
 
 			<!-- svelte-ignore a11y_missing_attribute -->
 			<button
-				role="button"
 				class="navbar-burger {navActive ? 'is-active' : ''}"
 				aria-label="menu"
 				aria-expanded={navActive ? 'true' : 'false'}
@@ -35,19 +35,19 @@
 
 		<div id="navMenu" class="navbar-menu {navActive ? 'is-active' : ''}">
 			<div class="navbar-start">
-				<a href="/" class="navbar-item"> Home </a>
-				<a href="/" class="navbar-item"> About </a>
-				<a href="/" class="navbar-item"> Services </a>
-				<a href="/" class="navbar-item"> Gallery </a>
+				<a href="{base}/" class="navbar-item"> Home </a>
+				<a href="{base}/" class="navbar-item"> About </a>
+				<a href="{base}/" class="navbar-item"> Services </a>
+				<a href="{base}/" class="navbar-item"> Gallery </a>
 			</div>
 
 			<div class="navbar-end">
 				<div class="navbar-item">
 					<div class="buttons">
-						<a href="contact" class="button is-primary">
+						<a href="{base}/contact" class="button is-primary">
 							<strong>Contact</strong>
 						</a>
-						<a href="facebook.com" class="button is-light"> Facebook </a>
+						<a href="https://www.facebook.com" class="button is-light"> Facebook </a>
 					</div>
 				</div>
 			</div>
