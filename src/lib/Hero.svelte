@@ -6,9 +6,7 @@
 
 <section class="hero is-fullheight-with-navbar has-bg-img" style="--bg-image: {bgImageUrl};">
 	<div class="container hero-body is-flex is-flex-direction-column is-justify-content-center">
-		<div
-			class="has-text-centered is-flex is-flex-direction-column is-align-content-center is-justify-content-center"
-		>
+		<div class="has-text-centered is-flex is-flex-direction-column is-align-content-center is-justify-content-center" >
 			<p class="is-size-1 is-great-vibes has-text-white">Welcome to<br />Dirty Beach Cleaning</p>
 			<figure class="image is-square mx-auto my-6">
 				<img src="{assets}/images/logo-with-sub.png" alt="" class="is-rounded" />
@@ -16,6 +14,10 @@
 			<p class="subtitle is-4 is-size-5-touch has-text-weight-semibold has-text-white">
 				Providing professional Residential and Vacation Rental cleaning services in Franklin and
 				Wakulla counties.
+			</p>
+			<hr />
+			<p class="subtitle is-4 is-size-5-touch has-text-weight-semibold has-text-white">
+				Weekly &#x2022; Bi-Weekly &#x2022; Monthly
 			</p>
 		</div>
 	</div>
