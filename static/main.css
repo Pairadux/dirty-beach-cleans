@@ -1,3 +1,10 @@
-@import "https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css";
+@import 'https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css';
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+	--bulma-info-h: 233deg;
+	--bulma-info-l: 73%;
+	--bulma-family-primary: Libre Baskerville;
+	--bulma-radius-large: 2rem;
+}
 
