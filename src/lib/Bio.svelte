@@ -6,14 +6,18 @@
 	<div
 		class="hero-body is-flex is-flex-direction-column is-align-content-center is-justify-content-center"
 	>
-		<div class="-mt-large is-flex is-justify-content-center is-align-content-center mt-6 mb-responsive">
+		<div
+			class="-mt-large is-flex is-justify-content-center is-align-content-center mt-6 mb-responsive"
+		>
 			<img
 				class="image is-128x128 is-hidden-mobile has-drop-shadow"
 				src="{assets}/images/palm-tree-bullet.svg"
 				alt=""
 			/>
 			<div>
-				<p class="title is-size-1 is-size-2-mobile is-great-vibes has-text-centered is-spaced has-text-white">
+				<p
+					class="title is-size-1 is-size-2-mobile is-great-vibes has-text-centered is-spaced has-text-white"
+				>
 					We Dont Just Clean, We Care!
 				</p>
 				<p class="subtitle has-text-white has-text-left is-size-5-touch">
