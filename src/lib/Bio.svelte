@@ -23,7 +23,7 @@
 				</p>
 			</div>
 			<img
-				class="image is-128x128 is-hidden-mobile has-drop-shadow"
+				class="image is-128x128 is-hidden-mobile has-drop-shadow is-reversed"
 				src="{assets}/images/palm-tree-bullet.svg"
 				alt=""
 			/>
@@ -32,6 +32,9 @@
 </section>
 
 <style>
+	.is-reversed {
+		transform: scaleX(-1);
+	}
 
 	.has-drop-shadow {
 		filter: drop-shadow(1px 1px 0.25rem rgba(0,0,0,0.5));
@@ -41,9 +44,9 @@
 		margin-bottom: 6rem;
 	}
 
-    @media screen and (max-width: 1023px) {
-        .mb-responsive {
-            margin-bottom: 3rem;
-        }
-    }
+	@media screen and (max-width: 1023px) {
+		.mb-responsive {
+			margin-bottom: 3rem;
+		}
+	}
 </style>
