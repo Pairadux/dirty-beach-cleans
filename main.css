@@ -1,0 +1,29 @@
+@import 'https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+	--bulma-info-h: 233deg;
+	--bulma-info-l: 73%;
+	--bulma-family-primary: Libre Baskerville;
+	--bulma-radius-large: 2rem;
+}
+
+.-mt-large {
+	margin-top: -6rem;
+}
+
+.is-great-vibes {
+	font-family: 'Great Vibes';
+	line-height: 1.25em;
+	font-weight: 800;
+}
+
+.has-drop-shadow {
+	filter: drop-shadow(1px 1px 0.25rem black);
+}
+
+@media screen and (max-width: 1023px) {
+    .-mt-large {
+        margin-top: -3rem;
+    }
+}
