@@ -1,14 +1,24 @@
+<script lang="ts">
+	import { assets } from '$app/paths';
+	const listImgUrl = `url('${assets}/images/checkbox.png')`;
+</script>
+
 <div class="container is-fluid -overlay -mt-large">
 	<div class="box is-rounded is-flex is-flex-direction-column py-6">
 		<div class="">
-			<p class="title is-size-2 is-size-4-mobile has-text-centered">Maintenance Cleaning Checklist</p>
+			<p class="title is-size-2 is-size-4-mobile has-text-centered">
+				Maintenance Cleaning Checklist
+			</p>
 			<p class="subtitle is-6 has-text-centered mt-1">
 				(Example: not limited to, as each home is customized)
 			</p>
 		</div>
 
 		<div class="fixed-grid has-3-cols-desktop has-1-cols-mobile has-1-cols-tablet my-6">
-			<div class="grid is-family-sans-serif has-text-weight-medium is-size-5 is-size-6-touch">
+			<div
+				class="grid is-family-sans-serif has-text-weight-medium is-size-5 is-size-6-touch"
+				style="--list-img: {listImgUrl}"
+			>
 				<div class="cell">Wipe Counters & Cabinet Doors</div>
 				<div class="cell">Clean Backsplash</div>
 				<div class="cell">Shine Appliances & Sink</div>
@@ -67,7 +77,7 @@
 		height: 20px;
 		width: 20px;
 		border-radius: 4px;
-		background-image: url('./images/checkbox.png');
+		background-image: var(--list-img);
 		background-repeat: no-repeat;
 		background-position: center;
 		background-size: 16px 16px;

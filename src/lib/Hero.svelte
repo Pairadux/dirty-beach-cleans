@@ -1,8 +1,10 @@
 <script lang="ts">
 	import { assets } from '$app/paths';
+
+	const bgImageUrl = `url('${assets}/images/beach_image.jpg')`;
 </script>
 
-<section class="hero is-fullheight-with-navbar has-bg-img">
+<section class="hero is-fullheight-with-navbar has-bg-img" style="--bg-image: {bgImageUrl};">
 	<div class="container hero-body is-flex is-flex-direction-column is-justify-content-center">
 		<div
 			class="has-text-centered is-flex is-flex-direction-column is-align-content-center is-justify-content-center"
@@ -36,7 +38,7 @@
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background-image: url('./images/beach_image.jpg');
+		background-image: var(--bg-image);
 		background-size: cover;
 		background-position: center;
 		filter: brightness(50%);
