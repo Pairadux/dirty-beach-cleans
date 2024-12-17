@@ -1,13 +1,27 @@
 <footer class="footer mt-6">
-  <div class="content has-text-centered">
-    <p>
-      <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>.
-      The source code is licensed
-      <a href="https://opensource.org/license/mit">MIT</a>. The
-      website content is licensed
-      <a href="https://creativecommons.org/licenses/by-nc-sa/4.0//"
-        >CC BY NC SA 4.0</a
-      >.
-    </p>
-  </div>
+	<div class="content has-text-centered">
+		<div class="level">
+			<div class="level-item has-text-centered">
+				<div>
+					<p class="heading">Facebook</p>
+				</div>
+			</div>
+			<div class="level-item has-text-centered">
+				<div>
+					<p class="heading">Contact</p>
+				</div>
+			</div>
+			<div class="level-item has-text-centered">
+				<div>
+					<p class="heading">Contact</p>
+				</div>
+			</div>
+			<div class="level-item has-text-centered">
+				<div>
+					<p class="heading">Contact</p>
+				</div>
+			</div>
+		</div>
+		<p>© 2024 DBA Dirty Beach Laundry and Cleaning Service LLC . All Rights Reserved.</p>
+	</div>
 </footer>
