@@ -32,6 +32,11 @@
 </section>
 
 <style>
+
+	.has-drop-shadow {
+		filter: drop-shadow(1px 1px 0.25rem rgba(0,0,0,0.5));
+	}
+
 	.mb-responsive {
 		margin-bottom: 6rem;
 	}
