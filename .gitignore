@@ -21,3 +21,6 @@ Thumbs.db
 # Vite
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+# Raw image scratch — temp originals/zip, not for the repo or deploy
+static/images/new-reference/

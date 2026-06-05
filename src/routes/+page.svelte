@@ -2,9 +2,11 @@
 	import { base } from '$app/paths';
 	import Hero from '$lib/Hero.svelte';
 	import Bio from '$lib/Bio.svelte';
+	import About from '$lib/About.svelte';
 	import Checklist from '$lib/Checklist.svelte';
 	import Reasons from '$lib/Reasons.svelte';
 	import Banner from '$lib/Banner.svelte';
+	import HomeShowcase from '$lib/HomeShowcase.svelte';
 	import Carousel from '$lib/Carousel.svelte';
 	import Services from '$lib/Services.svelte';
 </script>
@@ -13,12 +15,13 @@
 	<title>Dirty Beach Cleaning | Home</title>
 	<meta
 		name="description"
-		content="Professional residential and vacation rental cleaning in Franklin and Wakulla counties. Weekly, bi-weekly, and monthly service."
+		content="Professional residential, vacation rental, and small business cleaning in Franklin and Wakulla counties. Licensed, insured, and locally trusted."
 	/>
 </svelte:head>
 
 <Hero />
 <Bio />
+<About />
 <Checklist />
 <Reasons />
 
@@ -26,6 +29,7 @@
 	<p class="great-vibes text-4xl sm:text-5xl">We keep you<br class="sm:hidden" /> Beachy Clean!</p>
 </Banner>
 
+<HomeShowcase />
 <Carousel />
 
 <Banner>

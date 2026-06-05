@@ -9,11 +9,7 @@
 	<div class="mx-auto grid max-w-6xl gap-8 px-6 py-12 sm:grid-cols-2 lg:grid-cols-3">
 		<!-- Brand -->
 		<div class="flex flex-col items-start gap-4">
-			<img
-				src={`${assets}/images/logo_white_text.png`}
-				alt="Dirty Beach Cleaning"
-				class="h-16 w-auto"
-			/>
+			<img src={`${assets}/images/logo-dark.png`} alt="Dirty Beach Cleaning" class="h-20 w-auto" />
 			<p class="text-sm text-gray-400">
 				Professional residential &amp; vacation rental cleaning in Franklin and Wakulla counties.
 			</p>

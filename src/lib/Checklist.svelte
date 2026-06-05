@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { assets } from '$app/paths';
+	import SectionHeading from './SectionHeading.svelte';
 
 	const checkbox = `${assets}/images/checkbox.png`;
 
@@ -31,17 +32,16 @@
 	];
 </script>
 
-<div id="services" class="relative z-10 mx-auto -mt-24 max-w-6xl px-4">
-	<div class="rounded-card bg-white px-6 py-10 shadow-xl sm:px-10 lg:px-16">
-		<div class="text-center">
-			<h2 class="text-2xl font-bold text-ink-strong sm:text-3xl lg:text-4xl">
-				Maintenance Cleaning Checklist
-			</h2>
-			<p class="mt-2 text-sm text-ink/70">(Example: not limited to, as each home is customized)</p>
-		</div>
+<section id="services" class="mx-auto max-w-6xl px-4 py-20 sm:py-24">
+	<SectionHeading
+		eyebrow="What we do"
+		title="Maintenance Cleaning Checklist"
+		subtitle="(Example: not limited to, as each home is customized)"
+	/>
 
+	<div class="mt-10 rounded-card border border-gray-100 bg-white p-6 shadow-md sm:p-10">
 		<ul
-			class="mx-auto my-10 grid max-w-4xl grid-cols-1 gap-x-8 gap-y-2.5 font-sans text-base font-medium sm:grid-cols-2 lg:grid-cols-3 lg:text-lg"
+			class="mx-auto grid max-w-4xl grid-cols-1 gap-x-8 gap-y-2.5 font-sans text-base font-medium sm:grid-cols-2 lg:grid-cols-3 lg:text-lg"
 		>
 			{#each items as item}
 				<li class="flex items-center gap-3">
@@ -50,9 +50,9 @@
 				</li>
 			{/each}
 		</ul>
-
-		<p class="text-center text-lg font-semibold italic sm:text-xl">
-			Our DEEP cleans...are more thorough and customizable to each home!
-		</p>
 	</div>
-</div>
+
+	<p class="mt-8 text-center text-lg font-semibold italic text-ink/80">
+		Our DEEP cleans...are more thorough and customizable to each home!
+	</p>
+</section>

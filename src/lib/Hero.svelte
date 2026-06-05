@@ -1,42 +1,86 @@
 <script lang="ts">
 	import { base, assets } from '$app/paths';
 
-	const bgImage = `url('${assets}/images/beach_image.jpg')`;
+	const logoCircle = `${assets}/images/logo-circle.jpg`;
+	const heroPhoto = `${assets}/images/hero-room.jpeg`;
+
+	// Trust factors echoed from her Facebook profile.
+	const trust = [
+		'Licensed & insured',
+		'Google Verified business',
+		'Best Service Provider Nominee — Wakulla Co. 2025',
+		'Reliable, detailed & trusted local cleaners'
+	];
 </script>
 
-<section
-	id="hero"
-	class="relative flex min-h-[calc(100svh-5rem)] items-center justify-center overflow-hidden px-4 py-16"
->
-	<!-- Darkened beach background -->
-	<div class="absolute inset-0 -z-10 bg-cover bg-center" style="background-image: {bgImage};"></div>
-	<div class="absolute inset-0 -z-10 bg-black/50"></div>
+<section id="hero" class="relative overflow-hidden bg-gradient-to-b from-info/10 to-white">
+	<div
+		class="mx-auto grid min-h-[calc(100svh-5rem)] max-w-6xl items-center gap-10 px-4 py-12 lg:grid-cols-2 lg:gap-12 lg:py-16"
+	>
+		<!-- Left: message + CTAs + trust -->
+		<div class="flex flex-col items-center text-center lg:items-start lg:text-left">
+			<img
+				src={logoCircle}
+				alt="Dirty Beach Cleaning"
+				class="mb-6 h-32 w-32 rounded-full shadow-md sm:h-40 sm:w-40"
+			/>
 
-	<div class="flex max-w-2xl flex-col items-center gap-6 text-center text-white">
-		<p class="great-vibes text-5xl sm:text-6xl">Welcome to<br />Dirty Beach Cleaning</p>
+			<p class="great-vibes text-3xl text-info sm:text-4xl">Beachy clean, every time</p>
+			<h1 class="mt-1 text-4xl font-bold leading-tight text-ink-strong sm:text-5xl">
+				Spotless homes,<br />stress-free living.
+			</h1>
 
-		<img
-			src={`${assets}/images/logo-with-sub.png`}
-			alt="Dirty Beach Cleaning logo"
-			class="h-64 w-64 rounded-full sm:h-72 sm:w-72 xl:h-80 xl:w-80"
-		/>
+			<p class="mt-4 max-w-md text-lg text-ink/80">
+				Professional residential, vacation rental &amp; small business cleaning across Franklin and
+				Wakulla counties — weekly, bi-weekly, monthly, or a one-time deep clean.
+			</p>
 
-		<p class="max-w-[32rem] text-lg font-semibold sm:text-xl">
-			Providing professional Residential and Vacation Rental cleaning services in Franklin and
-			Wakulla counties.
-		</p>
+			<div class="mt-7 flex flex-col gap-3 sm:flex-row">
+				<a
+					href={`${base}/contact`}
+					class="rounded-full bg-primary px-8 py-3 text-lg font-bold text-white shadow-lg transition-colors hover:bg-primary-600"
+				>
+					Get a Free Quote
+				</a>
+				<a
+					href="tel:+12293795911"
+					class="rounded-full border-2 border-info px-8 py-3 text-lg font-bold text-info transition-colors hover:bg-info hover:text-white"
+				>
+					Call/Text (229) 379-5911
+				</a>
+			</div>
 
-		<hr class="w-1/2 border-t border-white/30" />
+			<ul
+				class="mt-8 grid grid-cols-1 gap-x-6 gap-y-2.5 text-left text-sm text-ink/80 sm:grid-cols-2"
+			>
+				{#each trust as item}
+					<li class="flex items-center gap-2">
+						<svg
+							class="h-5 w-5 shrink-0 text-primary"
+							viewBox="0 0 20 20"
+							fill="currentColor"
+							aria-hidden="true"
+						>
+							<path
+								fill-rule="evenodd"
+								d="M16.7 5.3a1 1 0 0 1 0 1.4l-7.5 7.5a1 1 0 0 1-1.4 0L3.3 10a1 1 0 1 1 1.4-1.4l3.1 3.1 6.8-6.8a1 1 0 0 1 1.4 0z"
+								clip-rule="evenodd"
+							/>
+						</svg>
+						<span>{item}</span>
+					</li>
+				{/each}
+			</ul>
+		</div>
 
-		<p class="text-lg font-semibold tracking-wide sm:text-xl">
-			Weekly &bull; Bi-Weekly &bull; Monthly
-		</p>
-
-		<a
-			href={`${base}/contact`}
-			class="mt-2 rounded-full bg-primary px-8 py-3 text-lg font-bold text-white shadow-lg transition-colors hover:bg-primary-600"
-		>
-			Get a Free Quote
-		</a>
+		<!-- Right: featured branded photo -->
+		<div class="relative mx-auto w-full max-w-xl">
+			<div class="absolute -inset-4 -z-10 rounded-[2.5rem] bg-info/20 blur-2xl"></div>
+			<img
+				src={heroPhoto}
+				alt="A clean, staged living room by Dirty Beach Cleaning"
+				class="aspect-[4/3] w-full rounded-card object-cover shadow-2xl"
+			/>
+		</div>
 	</div>
 </section>

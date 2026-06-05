@@ -4,23 +4,23 @@
 	const palm = `${assets}/images/palm-tree-bullet.svg`;
 </script>
 
-<section id="about" class="flex min-h-[50vh] items-center justify-center bg-info px-4 pb-32 pt-16">
-	<div class="flex items-center justify-center gap-6">
-		<img src={palm} alt="" class="hidden h-28 w-28 drop-shadow-lg lg:block xl:h-32 xl:w-32" />
+<section class="relative overflow-hidden bg-info px-4 py-20 text-white sm:py-24">
+	<div class="mx-auto flex max-w-4xl items-center justify-center gap-8">
+		<img src={palm} alt="" class="hidden h-24 w-24 drop-shadow-lg lg:block xl:h-28 xl:w-28" />
 
-		<div class="max-w-3xl space-y-6 text-white">
-			<h2 class="great-vibes text-center text-4xl sm:text-5xl">We Don't Just Clean, We Care!</h2>
-			<p class="text-lg leading-relaxed sm:text-xl">
+		<div class="text-center">
+			<p class="great-vibes text-3xl text-white/90 sm:text-4xl">We don't just clean, we care</p>
+			<p class="mt-4 text-lg leading-relaxed sm:text-xl">
 				"At Dirty Beach, your home isn't just another task on our list—it's a commitment!" Serving
-				Franklin and Wakulla counties, we'll go beyond the surface to create spaces that you're
-				proud to call home. Our passion: serving you with care one clean home at a time.
+				Franklin and Wakulla counties, we go beyond the surface to create spaces you're proud to
+				call home — caring for you one clean home at a time.
 			</p>
 		</div>
 
 		<img
 			src={palm}
 			alt=""
-			class="hidden h-28 w-28 -scale-x-100 drop-shadow-lg lg:block xl:h-32 xl:w-32"
+			class="hidden h-24 w-24 -scale-x-100 drop-shadow-lg lg:block xl:h-28 xl:w-28"
 		/>
 	</div>
 </section>

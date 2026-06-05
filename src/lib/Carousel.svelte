@@ -2,6 +2,7 @@
 	import emblaCarouselSvelte from 'embla-carousel-svelte';
 	import type { EmblaCarouselType, EmblaOptionsType } from 'embla-carousel';
 	import { assets } from '$app/paths';
+	import SectionHeading from './SectionHeading.svelte';
 
 	const slides = Array.from(
 		{ length: 11 },
@@ -26,30 +27,29 @@
 	}
 </script>
 
-<section id="gallery" class="mx-auto my-20 max-w-5xl px-4">
-	<h2 class="great-vibes text-center text-4xl sm:text-5xl">We Love What We Do...</h2>
-	<p class="mx-auto mb-10 mt-6 max-w-2xl text-center text-base lg:text-lg">
-		"We take pride in our work and it shows!" From Vacation Properties to Private Homes, these
-		photos represent just a small illustration of our dedication and hard work provided just for
-		you.
-	</p>
+<section id="gallery" class="mx-auto max-w-6xl px-4 py-20 sm:py-24">
+	<SectionHeading
+		eyebrow="Our work"
+		title="We love what we do"
+		subtitle="From vacation properties to private homes — a small look at the care we bring to every job."
+	/>
 
-	<div class="relative">
+	<div class="relative mt-10">
 		<!-- Viewport -->
 		<div
-			class="overflow-hidden rounded-card"
+			class="overflow-hidden"
 			use:emblaCarouselSvelte={{ options, plugins: [] }}
 			onemblaInit={onInit}
 		>
-			<!-- Container -->
-			<div class="flex">
+			<!-- Container: auto-width slides so every photo shows uncropped at its natural aspect -->
+			<div class="flex gap-4">
 				{#each slides as src (src)}
-					<div class="min-w-0 flex-[0_0_100%] px-1">
+					<div class="flex-[0_0_auto]">
 						<img
 							{src}
 							alt="A home cleaned by Dirty Beach"
 							loading="lazy"
-							class="h-[24rem] w-full rounded-card object-cover sm:h-[32rem] lg:h-[40rem]"
+							class="h-[22rem] w-auto rounded-card object-cover sm:h-[30rem]"
 						/>
 					</div>
 				{/each}

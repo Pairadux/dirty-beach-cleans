@@ -21,11 +21,7 @@
 	<div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-2">
 		<!-- Brand -->
 		<a href={`${base}/`} class="flex items-center" onclick={close}>
-			<img
-				src={`${assets}/images/CLEANING SERVICES (Logo).png`}
-				alt="Dirty Beach Cleaning"
-				class="h-16 w-auto"
-			/>
+			<img src={`${assets}/images/logo-dark.png`} alt="Dirty Beach Cleaning" class="h-14 w-auto" />
 		</a>
 
 		<!-- Burger (mobile) -->

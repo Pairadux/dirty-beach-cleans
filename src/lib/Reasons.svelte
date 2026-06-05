@@ -1,10 +1,11 @@
 <script lang="ts">
 	import { assets } from '$app/paths';
+	import SectionHeading from './SectionHeading.svelte';
 
 	const reasons = [
 		{
 			icon: 'decorations/starfish.svg',
-			text: "your home is getting a quality clean we're proud of. WE GUARANTEE IT!"
+			text: "your home is getting a quality clean we're proud of. We guarantee it!"
 		},
 		{
 			icon: 'palm-tree-bullet.svg',
@@ -17,17 +18,17 @@
 	];
 </script>
 
-<section class="mx-auto my-20 max-w-6xl px-4">
-	<h2 class="great-vibes mx-auto max-w-2xl text-center text-4xl sm:text-5xl">
-		With Dirty Beach you can live stress free knowing that...
-	</h2>
+<section class="mx-auto max-w-6xl px-4 py-20 sm:py-24">
+	<SectionHeading eyebrow="Peace of mind" title="Live stress-free knowing that..." />
 
-	<div class="mt-10 flex flex-col items-center justify-center gap-6 md:flex-row md:items-stretch">
+	<div class="mt-10 grid gap-6 sm:grid-cols-3">
 		{#each reasons as reason}
 			<div
-				class="flex w-72 flex-col items-center gap-4 rounded-card border border-gray-200 bg-white p-6 text-center shadow-md transition-transform hover:-translate-y-1 md:w-64 lg:w-72"
+				class="flex flex-col items-center gap-4 rounded-card border border-gray-100 bg-white p-8 text-center shadow-md transition-transform hover:-translate-y-1"
 			>
-				<img src={`${assets}/images/${reason.icon}`} alt="" class="h-16 drop-shadow-lg xl:h-20" />
+				<span class="flex h-20 w-20 items-center justify-center rounded-full bg-info/10">
+					<img src={`${assets}/images/${reason.icon}`} alt="" class="h-12 drop-shadow" />
+				</span>
 				<p class="text-base lg:text-lg">{reason.text}</p>
 			</div>
 		{/each}

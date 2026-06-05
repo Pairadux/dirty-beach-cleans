@@ -1,4 +1,6 @@
 <script lang="ts">
+	import SectionHeading from './SectionHeading.svelte';
+
 	const services = [
 		{
 			q: 'What is a Maintenance Clean?',
@@ -19,10 +21,12 @@
 	];
 </script>
 
-<section class="mx-auto my-20 flex max-w-3xl flex-col items-center gap-8 px-4">
-	<h2 class="great-vibes text-center text-4xl sm:text-5xl">Explanation of our services</h2>
+<section class="mx-auto max-w-3xl px-4 py-20 sm:py-24">
+	<SectionHeading eyebrow="Good to know" title="Explanation of our services" />
 
-	<div class="w-full divide-y divide-gray-200 overflow-hidden rounded-2xl border border-gray-200">
+	<div
+		class="mt-10 w-full divide-y divide-gray-200 overflow-hidden rounded-2xl border border-gray-200"
+	>
 		{#each services as service}
 			<details class="group">
 				<summary
