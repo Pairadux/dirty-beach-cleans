@@ -3,16 +3,10 @@
 
 	const methods = [
 		{
-			icon: '1564528_fly_messager_send_communication_email_icon.svg',
-			label: 'Text Us',
-			value: '(229) 379-5911',
-			href: 'sms:+12293795911'
-		},
-		{
 			icon: '352510_local_phone_icon.svg',
-			label: 'Call Us',
-			value: '(850) 329-8814',
-			href: 'tel:+18503298814'
+			label: 'Call or Text Us',
+			value: '(229) 379-5911',
+			href: 'tel:+12293795911'
 		},
 		{
 			icon: '8665305_envelope_email_icon.svg',
@@ -50,7 +44,7 @@
 
 	<section class="flex flex-1 items-center px-4 py-16">
 		<div class="mx-auto w-full max-w-4xl">
-			<div class="grid gap-6 sm:grid-cols-2">
+			<div class="grid gap-6 sm:grid-cols-3">
 				{#each methods as method}
 					<a
 						href={method.href}

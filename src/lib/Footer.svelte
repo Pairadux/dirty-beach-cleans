@@ -34,13 +34,8 @@
 			<h3 class="mb-3 font-semibold text-white">Get in touch</h3>
 			<ul class="space-y-2 text-sm">
 				<li>
-					<a href="sms:+12293795911" class="transition-colors hover:text-white"
-						>Text: (229) 379-5911</a
-					>
-				</li>
-				<li>
-					<a href="tel:+18503298814" class="transition-colors hover:text-white"
-						>Call: (850) 329-8814</a
+					<a href="tel:+12293795911" class="transition-colors hover:text-white"
+						>Call or Text: (229) 379-5911</a
 					>
 				</li>
 				<li>
