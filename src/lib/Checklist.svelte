@@ -1,102 +1,58 @@
 <script lang="ts">
 	import { assets } from '$app/paths';
-	const listImgUrl = `url('${assets}/images/checkbox.png')`;
+
+	const checkbox = `${assets}/images/checkbox.png`;
+
+	const items = [
+		'Wipe Counters & Cabinet Doors',
+		'Clean Backsplash',
+		'Shine Appliances & Sink',
+		'Wipe Hood-Range',
+		'Clean Microwave Inside/Out',
+		'Dust Light Fixtures',
+		'Clean Table & Chairs',
+		'Dust Furniture',
+		'Dust & Spot Clean Glass',
+		'Make Beds/Change Linens',
+		'Clean Mirrors',
+		'Dust Nightstands/Dressers',
+		'Vacuum',
+		'Mop',
+		'Fluff Pillows',
+		'Re-stage Bed',
+		'Dust Ceiling Fans',
+		'Dust Baseboards',
+		'Empty Garbage',
+		'Clean Counters, Sink, & Cabinets',
+		'Polish Fixtures',
+		'Clean Toilet Inside & Out',
+		'Clean Shower And/Or Bathtub',
+		'Straighten or Replace Towels'
+	];
 </script>
 
-<div class="container is-fluid -overlay -mt-large">
-	<div class="box is-rounded is-flex is-flex-direction-column py-6">
-		<div class="">
-			<p class="title is-size-2 is-size-4-mobile has-text-centered">
+<div id="services" class="relative z-10 mx-auto -mt-24 max-w-6xl px-4">
+	<div class="rounded-card bg-white px-6 py-10 shadow-xl sm:px-10 lg:px-16">
+		<div class="text-center">
+			<h2 class="text-2xl font-bold text-ink-strong sm:text-3xl lg:text-4xl">
 				Maintenance Cleaning Checklist
-			</p>
-			<p class="subtitle is-6 has-text-centered mt-1">
-				(Example: not limited to, as each home is customized)
-			</p>
+			</h2>
+			<p class="mt-2 text-sm text-ink/70">(Example: not limited to, as each home is customized)</p>
 		</div>
 
-		<div class="fixed-grid has-3-cols-desktop has-1-cols-mobile has-1-cols-tablet my-6">
-			<div
-				class="grid is-family-sans-serif has-text-weight-medium is-size-5 is-size-6-touch"
-				style="--list-img: {listImgUrl}"
-			>
-				<div class="cell">Wipe Counters & Cabinet Doors</div>
-				<div class="cell">Clean Backsplash</div>
-				<div class="cell">Shine Appliances & Sink</div>
-				<div class="cell">Wipe Hood-Range</div>
-				<div class="cell">Clean Microwave Inside/Out</div>
-				<div class="cell">Dust Light Fixtures</div>
-				<div class="cell">Clean Table & Chairs</div>
-				<div class="cell">Dust Furniture</div>
-				<div class="cell">Dust & Spot Clean Glass</div>
-				<div class="cell">Make Beds/Change Linens</div>
-				<div class="cell">Clean Mirrors</div>
-				<div class="cell">Dust Nightstands/Dressers</div>
-				<div class="cell">Vacuum</div>
-				<div class="cell">Mop</div>
-				<div class="cell">Fluff Pillows</div>
-				<div class="cell">Re-stage Bed</div>
-				<div class="cell">Dust Ceiling Fans</div>
-				<div class="cell">Dust Baseboards</div>
-				<div class="cell">Empty Garbage</div>
-				<div class="cell">Clean Counters, Sink, & Cabinets</div>
-				<div class="cell">Polish Fixtures</div>
-				<div class="cell">Clean Toilet Inside & Out</div>
-				<div class="cell">Clean Shower And/Or Bathtub</div>
-				<div class="cell">Straighten or Replace Towels</div>
-			</div>
-		</div>
+		<ul
+			class="mx-auto my-10 grid max-w-4xl grid-cols-1 gap-x-8 gap-y-2.5 font-sans text-base font-medium sm:grid-cols-2 lg:grid-cols-3 lg:text-lg"
+		>
+			{#each items as item}
+				<li class="flex items-center gap-3">
+					<img src={checkbox} alt="" class="h-5 w-5 shrink-0" />
+					<span>{item}</span>
+				</li>
+			{/each}
+		</ul>
 
-		<p class="subtitle is-4 has-text-centered is-italic has-text-weight-semibold">
+		<p class="text-center text-lg font-semibold italic sm:text-xl">
 			Our DEEP cleans...are more thorough and customizable to each home!
 		</p>
 	</div>
 </div>
-
-<style>
-	.grid {
-		place-items: center;
-		margin-left: 32px;
-		margin-right: 32px;
-	}
-
-	.cell {
-		position: relative;
-		width: 20rem;
-		padding: 0.5rem 0rem 0.5rem 2.5rem;
-		transition:
-			background-color 0.3s,
-			box-shadow 0.3s;
-	}
-
-	.cell::before {
-		content: '';
-		position: absolute;
-		left: 0.75rem;
-		top: 50%;
-		transform: translateY(-50%);
-		height: 20px;
-		width: 20px;
-		border-radius: 4px;
-		background-image: var(--list-img);
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: 16px 16px;
-	}
-
-	@media screen and (max-width: 1023px) {
-		.grid {
-			place-items: unset;
-			margin-left: 0px;
-			margin-right: 0px;
-		}
-
-		.cell {
-			position: relative;
-			width: 20rem;
-			padding: 0.25rem 0rem 0.25rem 2.5rem;
-			transition:
-				background-color 0.3s,
-				box-shadow 0.3s;
-		}
-	}
-</style>

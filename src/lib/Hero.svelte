@@ -1,57 +1,42 @@
 <script lang="ts">
-	import { assets } from '$app/paths';
+	import { base, assets } from '$app/paths';
 
-	const bgImageUrl = `url('${assets}/images/beach_image.jpg')`;
+	const bgImage = `url('${assets}/images/beach_image.jpg')`;
 </script>
 
-<section class="hero is-fullheight-with-navbar has-bg-img" style="--bg-image: {bgImageUrl};">
-	<div class="container hero-body is-flex is-flex-direction-column is-justify-content-center">
-		<div class="has-text-centered is-flex is-flex-direction-column is-align-content-center is-justify-content-center" >
-			<p class="is-size-1 is-great-vibes has-text-white">Welcome to<br />Dirty Beach Cleaning</p>
-			<figure class="image is-square mx-auto my-6">
-				<img src="{assets}/images/logo-with-sub.png" alt="" class="is-rounded" />
-			</figure>
-			<p class="subtitle is-4 is-size-5-touch has-text-weight-semibold has-text-white">
-				Providing professional Residential and Vacation Rental cleaning services in Franklin and
-				Wakulla counties.
-			</p>
-			<hr />
-			<p class="subtitle is-4 is-size-5-touch has-text-weight-semibold has-text-white">
-				Weekly &#x2022; Bi-Weekly &#x2022; Monthly
-			</p>
-		</div>
+<section
+	id="hero"
+	class="relative flex min-h-[calc(100svh-5rem)] items-center justify-center overflow-hidden px-4 py-16"
+>
+	<!-- Darkened beach background -->
+	<div class="absolute inset-0 -z-10 bg-cover bg-center" style="background-image: {bgImage};"></div>
+	<div class="absolute inset-0 -z-10 bg-black/50"></div>
+
+	<div class="flex max-w-2xl flex-col items-center gap-6 text-center text-white">
+		<p class="great-vibes text-5xl sm:text-6xl">Welcome to<br />Dirty Beach Cleaning</p>
+
+		<img
+			src={`${assets}/images/logo-with-sub.png`}
+			alt="Dirty Beach Cleaning logo"
+			class="h-64 w-64 rounded-full sm:h-72 sm:w-72 xl:h-80 xl:w-80"
+		/>
+
+		<p class="max-w-[32rem] text-lg font-semibold sm:text-xl">
+			Providing professional Residential and Vacation Rental cleaning services in Franklin and
+			Wakulla counties.
+		</p>
+
+		<hr class="w-1/2 border-t border-white/30" />
+
+		<p class="text-lg font-semibold tracking-wide sm:text-xl">
+			Weekly &bull; Bi-Weekly &bull; Monthly
+		</p>
+
+		<a
+			href={`${base}/contact`}
+			class="mt-2 rounded-full bg-primary px-8 py-3 text-lg font-bold text-white shadow-lg transition-colors hover:bg-primary-600"
+		>
+			Get a Free Quote
+		</a>
 	</div>
 </section>
-
-<style>
-	.hero-body {
-		z-index: 100;
-	}
-
-	.has-bg-img {
-		position: relative;
-		overflow: hidden;
-	}
-
-	.has-bg-img::before {
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background-image: var(--bg-image);
-		background-size: cover;
-		background-position: center;
-		filter: brightness(50%);
-	}
-
-	.image {
-		height: 20rem;
-		width: 20rem;
-	}
-
-	.subtitle {
-		width: 32rem;
-	}
-</style>
