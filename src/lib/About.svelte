@@ -35,7 +35,8 @@
 			</div>
 			<div class="mt-7">
 				<a
-					href={`${base}/contact`}
+					href={`${base}/quote`}
+					data-sveltekit-reload
 					class="inline-block rounded-full bg-primary px-8 py-3 text-lg font-bold text-white shadow-lg transition-colors hover:bg-primary-600"
 				>
 					Work with Julie

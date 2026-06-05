@@ -36,10 +36,11 @@
 	<p class="great-vibes text-4xl sm:text-5xl">
 		Free Quotes!<br />Head to our
 		<a
-			href={`${base}/contact`}
+			href={`${base}/quote`}
+			data-sveltekit-reload
 			class="italic underline decoration-2 underline-offset-4 transition-colors hover:text-white/80"
 		>
-			contact page
+			quote form
 		</a>
 		to get started!
 	</p>

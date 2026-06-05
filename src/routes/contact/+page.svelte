@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { assets } from '$app/paths';
+	import { base, assets } from '$app/paths';
 
 	const methods = [
 		{
@@ -39,6 +39,13 @@
 		<p class="mx-auto mt-3 max-w-xl text-lg italic">
 			We're here to answer any questions — and your quote is always free.
 		</p>
+		<a
+			href={`${base}/quote`}
+			data-sveltekit-reload
+			class="mt-6 inline-block rounded-full bg-white px-7 py-3 font-bold text-info shadow-lg transition-colors hover:bg-white/90"
+		>
+			Request a Free Quote
+		</a>
 	</section>
 
 	<section class="flex flex-1 items-center px-4 py-16">

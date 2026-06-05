@@ -7,7 +7,8 @@
 		{ href: `${base}/`, label: 'Home' },
 		{ href: `${base}/#about`, label: 'About' },
 		{ href: `${base}/#services`, label: 'Services' },
-		{ href: `${base}/#gallery`, label: 'Gallery' }
+		{ href: `${base}/#gallery`, label: 'Gallery' },
+		{ href: `${base}/contact`, label: 'Contact' }
 	];
 
 	const facebook = 'https://www.facebook.com/dirtybeachcleaning';
@@ -53,10 +54,11 @@
 				<a href={link.href} class="text-ink transition-colors hover:text-primary">{link.label}</a>
 			{/each}
 			<a
-				href={`${base}/contact`}
-				class="rounded-md bg-primary px-4 py-2 font-bold text-white transition-colors hover:bg-primary-600"
+				href={`${base}/quote`}
+				data-sveltekit-reload
+				class="rounded-full bg-primary px-5 py-2 font-bold text-white transition-colors hover:bg-primary-600"
 			>
-				Contact
+				Get a Quote
 			</a>
 			<a
 				href={facebook}
@@ -82,11 +84,12 @@
 				</a>
 			{/each}
 			<a
-				href={`${base}/contact`}
-				class="mt-2 rounded-md bg-primary px-4 py-2 text-center font-bold text-white"
+				href={`${base}/quote`}
+				data-sveltekit-reload
+				class="mt-2 rounded-full bg-primary px-4 py-2 text-center font-bold text-white"
 				onclick={close}
 			>
-				Contact
+				Get a Quote
 			</a>
 			<a
 				href={facebook}
