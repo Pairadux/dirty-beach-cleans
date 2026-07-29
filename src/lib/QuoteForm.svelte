@@ -25,6 +25,22 @@
 		'Laundry Service',
 		'Organization / Decluttering'
 	];
+	// Service-area towns for the city datalist — suggestions only, free text still allowed.
+	const serviceCities = [
+		'Crawfordville',
+		'Panacea',
+		'Sopchoppy',
+		'St. Marks',
+		'Shell Point',
+		'Ochlockonee Bay',
+		'Alligator Point',
+		'St. Teresa',
+		'Lanark Village',
+		'Carrabelle',
+		'Eastpoint',
+		'Apalachicola',
+		'St. George Island'
+	];
 	const bedroomOptions = ['Studio', '1', '2', '3', '4', '5+'];
 	const bathroomOptions = ['1', '1.5', '2', '2.5', '3', '3.5', '4+'];
 
@@ -74,15 +90,40 @@
 				<input class={inputClass} id="email" name="email" type="email" required />
 			</div>
 			<div>
-				<label class={labelClass} for="property_address">Property Address *</label>
+				<label class={labelClass} for="street_address">Street Address *</label>
+				<input class={inputClass} id="street_address" name="street_address" type="text" required />
+			</div>
+			<div>
+				<label class={labelClass} for="city">City *</label>
 				<input
 					class={inputClass}
-					id="property_address"
-					name="property_address"
+					id="city"
+					name="city"
 					type="text"
+					list="service-cities"
+					required
+				/>
+				<datalist id="service-cities">
+					{#each serviceCities as city}
+						<option value={city}></option>
+					{/each}
+				</datalist>
+			</div>
+			<div>
+				<label class={labelClass} for="zip">ZIP Code *</label>
+				<input
+					class={inputClass}
+					id="zip"
+					name="zip"
+					type="text"
+					inputmode="numeric"
+					pattern={'[0-9]{5}'}
+					maxlength="5"
+					title="5-digit ZIP code"
 					required
 				/>
 			</div>
+			<input type="hidden" name="state" value="FL" />
 		</div>
 	</div>
 
