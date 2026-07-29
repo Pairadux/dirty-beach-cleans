@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { base, assets } from '$app/paths';
+	import { facebook } from '$lib/site';
 
 	let navActive = $state(false);
 
@@ -10,8 +11,6 @@
 		{ href: `${base}/#gallery`, label: 'Gallery' },
 		{ href: `${base}/contact`, label: 'Contact' }
 	];
-
-	const facebook = 'https://www.facebook.com/dirtybeachcleaning';
 
 	function close() {
 		navActive = false;

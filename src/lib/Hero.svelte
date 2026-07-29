@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { base, assets } from '$app/paths';
+	import { phoneDisplay, phoneHref } from '$lib/site';
 
 	const logoCircle = `${assets}/images/logo-circle.jpg`;
 	const heroPhoto = `${assets}/images/hero-room.jpeg`;
@@ -44,10 +45,10 @@
 					Get a Free Quote
 				</a>
 				<a
-					href="tel:+12293795911"
+					href={phoneHref}
 					class="rounded-full border-2 border-info px-8 py-3 text-lg font-bold text-info transition-colors hover:bg-info hover:text-white"
 				>
-					Call/Text (229) 379-5911
+					Call/Text {phoneDisplay}
 				</a>
 			</div>
 

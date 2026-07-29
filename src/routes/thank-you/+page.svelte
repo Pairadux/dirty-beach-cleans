@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { base, assets } from '$app/paths';
-
-	const facebook = 'https://www.facebook.com/dirtybeachcleaning';
+	import { facebook, phoneDisplay, phoneHref } from '$lib/site';
 </script>
 
 <svelte:head>
@@ -22,7 +21,7 @@
 	<p class="mx-auto mt-4 max-w-md text-lg text-ink/80">
 		We'll be in touch within 24 hours with an estimate or to schedule a walkthrough. Prefer to talk
 		now? Call or text
-		<a class="font-semibold text-info" href="tel:+12293795911">(229) 379-5911</a>.
+		<a class="font-semibold text-info" href={phoneHref}>{phoneDisplay}</a>.
 	</p>
 	<div class="mt-8 flex flex-col gap-3 sm:flex-row">
 		<a

@@ -1,25 +1,26 @@
 <script lang="ts">
 	import { base, assets } from '$app/paths';
+	import { email, facebook, phoneDisplay, phoneHref } from '$lib/site';
 	import SectionHeading from '$lib/SectionHeading.svelte';
 
 	const methods = [
 		{
 			icon: 'phone_icon.svg',
 			label: 'Call or Text',
-			value: '(229) 379-5911',
-			href: 'tel:+12293795911'
+			value: phoneDisplay,
+			href: phoneHref
 		},
 		{
 			icon: 'envelope_email_icon.svg',
 			label: 'Email',
-			value: 'dirtybeachllc@gmail.com',
-			href: 'mailto:dirtybeachllc@gmail.com'
+			value: email,
+			href: `mailto:${email}`
 		},
 		{
 			icon: 'facebook_icon.svg',
 			label: 'Facebook',
 			value: '@dirtybeachcleaning',
-			href: 'https://www.facebook.com/dirtybeachcleaning'
+			href: facebook
 		}
 	];
 

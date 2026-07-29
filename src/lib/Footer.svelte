@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { base, assets } from '$app/paths';
+	import { email, facebook, phoneDisplay, phoneHref } from '$lib/site';
 
-	const facebook = 'https://www.facebook.com/dirtybeachcleaning';
 	const year = new Date().getFullYear();
 </script>
 
@@ -34,13 +34,13 @@
 			<h3 class="mb-3 font-semibold text-white">Get in touch</h3>
 			<ul class="space-y-2 text-sm">
 				<li>
-					<a href="tel:+12293795911" class="transition-colors hover:text-white"
-						>Call or Text: (229) 379-5911</a
+					<a href={phoneHref} class="transition-colors hover:text-white"
+						>Call or Text: {phoneDisplay}</a
 					>
 				</li>
 				<li>
-					<a href="mailto:dirtybeachllc@gmail.com" class="transition-colors hover:text-white">
-						dirtybeachllc@gmail.com
+					<a href={`mailto:${email}`} class="transition-colors hover:text-white">
+						{email}
 					</a>
 				</li>
 				<li><a href={facebook} class="transition-colors hover:text-white">Facebook</a></li>
