@@ -1,5 +1,6 @@
 <script lang="ts">
 	import QuoteForm from '$lib/QuoteForm.svelte';
+	import Seo from '$lib/Seo.svelte';
 
 	const badges = [
 		'Licensed & Insured',
@@ -8,13 +9,10 @@
 	];
 </script>
 
-<svelte:head>
-	<title>Dirty Beach | Request a Free Quote</title>
-	<meta
-		name="description"
-		content="Request a free cleaning quote from Dirty Beach Cleaning. Tell us about your home or vacation rental and we'll respond within 24 hours."
-	/>
-</svelte:head>
+<Seo
+	title="Dirty Beach | Request a Free Quote"
+	description="Request a free cleaning quote from Dirty Beach Cleaning. Tell us about your home or vacation rental and we'll respond within 24 hours."
+/>
 
 <section class="bg-info px-4 py-16 text-center text-white">
 	<h1 class="great-vibes text-4xl sm:text-5xl">Request a Free Quote</h1>

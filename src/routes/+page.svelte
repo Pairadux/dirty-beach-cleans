@@ -10,15 +10,13 @@
 	import Carousel from '$lib/Carousel.svelte';
 	import Reviews from '$lib/Reviews.svelte';
 	import Services from '$lib/Services.svelte';
+	import Seo from '$lib/Seo.svelte';
 </script>
 
-<svelte:head>
-	<title>Dirty Beach Cleaning | Home</title>
-	<meta
-		name="description"
-		content="Professional residential, vacation rental, and small business cleaning in Franklin and Wakulla counties. Licensed, insured, and locally trusted."
-	/>
-</svelte:head>
+<Seo
+	title="Dirty Beach Cleaning | Home"
+	description="Professional residential, vacation rental, and small business cleaning in Franklin and Wakulla counties. Licensed, insured, and locally trusted."
+/>
 
 <Hero />
 <Bio />

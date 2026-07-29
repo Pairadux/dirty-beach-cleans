@@ -3,6 +3,7 @@
 	import { email, facebook, phoneDisplay, phoneHref } from '$lib/site';
 	import SectionHeading from '$lib/SectionHeading.svelte';
 	import MembershipBadges from '$lib/MembershipBadges.svelte';
+	import Seo from '$lib/Seo.svelte';
 
 	const methods = [
 		{
@@ -34,13 +35,10 @@
 	];
 </script>
 
-<svelte:head>
-	<title>Dirty Beach | Contact</title>
-	<meta
-		name="description"
-		content="Contact Dirty Beach Cleaning — call, text, email, or message us on Facebook. Serving Franklin and Wakulla counties, with responses within 24 hours."
-	/>
-</svelte:head>
+<Seo
+	title="Dirty Beach | Contact"
+	description="Contact Dirty Beach Cleaning — call, text, email, or message us on Facebook. Serving Franklin and Wakulla counties, with responses within 24 hours."
+/>
 
 <section class="bg-info px-4 py-20 text-center text-white">
 	<p class="great-vibes text-3xl text-white/90 sm:text-4xl">We'd love to hear from you</p>
