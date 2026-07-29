@@ -20,6 +20,13 @@ export default ts.config(
 				...globals.browser,
 				...globals.node
 			}
+		},
+		rules: {
+			// Allow `_` as a throwaway name in each-loops and callbacks.
+			'@typescript-eslint/no-unused-vars': [
+				'error',
+				{ varsIgnorePattern: '^_$', argsIgnorePattern: '^_$' }
+			]
 		}
 	},
 	{

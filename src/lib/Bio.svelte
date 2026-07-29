@@ -1,56 +1,26 @@
 <script lang="ts">
 	import { assets } from '$app/paths';
+
+	const palm = `${assets}/images/palm-tree-bullet.svg`;
 </script>
 
-<section class="hero is-info is-halfheight">
-	<div
-		class="hero-body is-flex is-flex-direction-column is-align-content-center is-justify-content-center"
-	>
-		<div
-			class="-mt-large is-flex is-justify-content-center is-align-content-center mt-6 mb-responsive"
-		>
-			<img
-				class="image is-128x128 is-hidden-mobile has-drop-shadow"
-				src="{assets}/images/palm-tree-bullet.svg"
-				alt=""
-			/>
-			<div>
-				<p
-					class="title is-size-1 is-size-2-mobile is-great-vibes has-text-centered is-spaced has-text-white"
-				>
-					We Dont Just Clean, We Care!
-				</p>
-				<p class="subtitle has-text-white has-text-left is-size-5-touch">
-					"At Dirty Beach, your home isn't just another task on our list—it's a commitment!" Serving
-					Franklin and Wakulla counties, we'll go beyond the surface to create spaces that you're
-					proud to call home. Our passion: serving you with care one clean home at a time.
-				</p>
-			</div>
-			<img
-				class="image is-128x128 is-hidden-mobile has-drop-shadow is-reversed"
-				src="{assets}/images/palm-tree-bullet.svg"
-				alt=""
-			/>
+<section class="relative overflow-hidden bg-info px-4 py-20 text-white sm:py-24">
+	<div class="mx-auto flex max-w-4xl items-center justify-center gap-8">
+		<img src={palm} alt="" class="hidden h-24 w-24 drop-shadow-lg lg:block xl:h-28 xl:w-28" />
+
+		<div class="text-center">
+			<p class="great-vibes text-3xl text-white/90 sm:text-4xl">We don't just clean, we care</p>
+			<p class="mt-4 text-lg leading-relaxed sm:text-xl">
+				"At Dirty Beach, your home isn't just another task on our list—it's a commitment!" Serving
+				Franklin and Wakulla counties, we go beyond the surface to create spaces you're proud to
+				call home — caring for you one clean home at a time.
+			</p>
 		</div>
+
+		<img
+			src={palm}
+			alt=""
+			class="hidden h-24 w-24 -scale-x-100 drop-shadow-lg lg:block xl:h-28 xl:w-28"
+		/>
 	</div>
 </section>
-
-<style>
-	.is-reversed {
-		transform: scaleX(-1);
-	}
-
-	.has-drop-shadow {
-		filter: drop-shadow(1px 1px 0.25rem rgba(0,0,0,0.5));
-	}
-
-	.mb-responsive {
-		margin-bottom: 6rem;
-	}
-
-	@media screen and (max-width: 1023px) {
-		.mb-responsive {
-			margin-bottom: 3rem;
-		}
-	}
-</style>
