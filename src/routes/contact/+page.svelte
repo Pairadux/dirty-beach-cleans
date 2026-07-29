@@ -2,6 +2,7 @@
 	import { base, assets } from '$app/paths';
 	import { email, facebook, phoneDisplay, phoneHref } from '$lib/site';
 	import SectionHeading from '$lib/SectionHeading.svelte';
+	import MembershipBadges from '$lib/MembershipBadges.svelte';
 
 	const methods = [
 		{
@@ -117,6 +118,10 @@
 					</li>
 				{/each}
 			</ul>
+
+			<div class="mt-7">
+				<MembershipBadges />
+			</div>
 		</div>
 	</div>
 </section>

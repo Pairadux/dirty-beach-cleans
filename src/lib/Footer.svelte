@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { base, assets } from '$app/paths';
 	import { email, facebook, phoneDisplay, phoneHref } from '$lib/site';
+	import MembershipBadges from './MembershipBadges.svelte';
 
 	const year = new Date().getFullYear();
 </script>
@@ -14,21 +15,7 @@
 				Professional residential &amp; vacation rental cleaning in Franklin and Wakulla counties.
 			</p>
 			<p class="text-sm text-gray-400">Licensed &amp; Insured &bull; Serving since 2021</p>
-			<div>
-				<p class="text-sm text-gray-400">Proud member of</p>
-				<div class="mt-2 flex items-center gap-3">
-					<img
-						src={`${assets}/images/wakulla-chamber-logo.png`}
-						alt="Wakulla County Chamber of Commerce"
-						class="h-16 w-16 rounded-xl bg-white p-1.5"
-					/>
-					<img
-						src={`${assets}/images/ahca-logo.png`}
-						alt="American House Cleaners Association"
-						class="h-16 w-auto rounded-xl bg-white p-1.5"
-					/>
-				</div>
-			</div>
+			<MembershipBadges light />
 		</div>
 
 		<!-- Explore -->

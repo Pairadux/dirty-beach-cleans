@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { base, assets } from '$app/paths';
 	import { facebook, phoneDisplay, phoneHref } from '$lib/site';
+	import MembershipBadges from './MembershipBadges.svelte';
 
 	const logoCircle = `${assets}/images/logo-circle.jpg`;
 	const heroPhoto = `${assets}/images/hero-room.jpeg`;
@@ -75,6 +76,10 @@
 					</li>
 				{/each}
 			</ul>
+
+			<div class="mt-7">
+				<MembershipBadges />
+			</div>
 
 			<a
 				href={facebook}
