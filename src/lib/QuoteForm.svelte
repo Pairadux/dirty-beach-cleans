@@ -109,7 +109,9 @@
 
 			<div class="space-y-4">
 				<div>
-					<label class={labelClass} for="square_footage">Square Footage</label>
+					<label class={labelClass} for="square_footage">
+						Square Footage <span class="font-normal text-ink/60">(estimate is fine)</span>
+					</label>
 					<input
 						class={inputClass}
 						id="square_footage"
