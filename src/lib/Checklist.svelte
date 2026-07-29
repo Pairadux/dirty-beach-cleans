@@ -41,7 +41,7 @@
 
 	<div class="mt-10 rounded-card border border-gray-100 bg-white p-6 shadow-md sm:p-10">
 		<ul
-			class="mx-auto grid max-w-4xl grid-cols-1 gap-x-8 gap-y-2.5 font-sans text-base font-medium sm:grid-cols-2 lg:grid-cols-3 lg:text-lg"
+			class="mx-auto grid max-w-4xl grid-cols-1 gap-x-8 gap-y-2.5 font-sans text-base sm:grid-cols-2 lg:grid-cols-3 lg:text-lg"
 		>
 			{#each items as item}
 				<li class="flex items-center gap-3">
