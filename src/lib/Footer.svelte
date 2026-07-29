@@ -13,6 +13,7 @@
 			<p class="text-sm text-gray-400">
 				Professional residential &amp; vacation rental cleaning in Franklin and Wakulla counties.
 			</p>
+			<p class="text-sm text-gray-400">Licensed &amp; Insured &bull; Serving since 2021</p>
 		</div>
 
 		<!-- Explore -->
