@@ -5,8 +5,16 @@
 	let { light = false }: { light?: boolean } = $props();
 
 	const memberships = [
-		{ file: 'wakulla-chamber-logo.png', name: 'Wakulla County Chamber of Commerce' },
-		{ file: 'ahca-logo.png', name: 'American House Cleaners Association' }
+		{
+			file: 'wakulla-chamber-logo.png',
+			name: 'Wakulla County Chamber of Commerce',
+			url: 'https://www.wakullacountychamber.com/'
+		},
+		{
+			file: 'ahca-logo.png',
+			name: 'American House Cleaners Association',
+			url: 'https://www.theahca.org/'
+		}
 	];
 </script>
 
@@ -14,11 +22,13 @@
 	<p class="text-sm {light ? 'text-gray-400' : 'text-ink/60'}">Proud member of</p>
 	<div class="mt-2 flex items-center gap-3">
 		{#each memberships as membership}
-			<img
-				src={`${assets}/images/${membership.file}`}
-				alt={membership.name}
-				class="h-16 w-auto rounded-xl border border-gray-100 bg-white p-1.5 shadow-sm"
-			/>
+			<a href={membership.url} target="_blank" rel="noopener">
+				<img
+					src={`${assets}/images/${membership.file}`}
+					alt={membership.name}
+					class="h-16 w-auto rounded-xl border border-gray-100 bg-white p-1.5 shadow-sm transition-transform hover:-translate-y-0.5"
+				/>
+			</a>
 		{/each}
 	</div>
 </div>
