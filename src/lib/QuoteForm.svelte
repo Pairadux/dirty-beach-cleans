@@ -203,11 +203,14 @@
 		</h3>
 		<div class="space-y-6">
 			<fieldset>
-				<legend class={labelClass}>What type of cleaning do you need?</legend>
+				<legend class={labelClass}>
+					What type of cleaning do you need?
+					<span class="font-normal text-ink/60">(select all that apply)</span>
+				</legend>
 				<div class="mt-2 grid gap-2 sm:grid-cols-2">
 					{#each cleaningTypes as opt}
 						<label class="flex items-center gap-2 text-sm">
-							<input type="radio" name="cleaning_type" value={opt} class="accent-primary" />
+							<input type="checkbox" name="cleaning_type" value={opt} class="accent-primary" />
 							<span>{opt}</span>
 						</label>
 					{/each}
