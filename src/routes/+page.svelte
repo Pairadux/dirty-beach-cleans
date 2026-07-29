@@ -21,6 +21,7 @@
 <Hero />
 <Bio />
 <About />
+<Services />
 <Checklist />
 <Reasons />
 
@@ -45,5 +46,3 @@
 		to get started!
 	</p>
 </Banner>
-
-<Services />
