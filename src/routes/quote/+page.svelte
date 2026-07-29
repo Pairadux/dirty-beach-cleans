@@ -10,6 +10,10 @@
 
 <svelte:head>
 	<title>Dirty Beach | Request a Free Quote</title>
+	<meta
+		name="description"
+		content="Request a free cleaning quote from Dirty Beach Cleaning. Tell us about your home or vacation rental and we'll respond within 24 hours."
+	/>
 </svelte:head>
 
 <section class="bg-info px-4 py-16 text-center text-white">
