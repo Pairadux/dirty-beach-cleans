@@ -2,7 +2,7 @@
 	import { assets } from '$app/paths';
 	import SectionHeading from './SectionHeading.svelte';
 
-	const homes = Array.from({ length: 5 }, (_, i) => `${assets}/images/homes/home-${i + 1}.jpg`);
+	const homes = Array.from({ length: 5 }, (_, i) => `${assets}/images/showcase-homes/home-1/image-${i + 1}.jpg`);
 </script>
 
 <section class="mx-auto max-w-6xl px-4 py-20 sm:py-24">

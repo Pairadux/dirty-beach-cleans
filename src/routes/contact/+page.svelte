@@ -4,19 +4,19 @@
 
 	const methods = [
 		{
-			icon: '352510_local_phone_icon.svg',
+			icon: 'phone_icon.svg',
 			label: 'Call or Text',
 			value: '(229) 379-5911',
 			href: 'tel:+12293795911'
 		},
 		{
-			icon: '8665305_envelope_email_icon.svg',
+			icon: 'envelope_email_icon.svg',
 			label: 'Email',
 			value: 'dirtybeachllc@gmail.com',
 			href: 'mailto:dirtybeachllc@gmail.com'
 		},
 		{
-			icon: '104498_facebook_icon.svg',
+			icon: 'facebook_icon.svg',
 			label: 'Facebook',
 			value: '@dirtybeachcleaning',
 			href: 'https://www.facebook.com/dirtybeachcleaning'
@@ -56,7 +56,7 @@
 						<span
 							class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-info/10"
 						>
-							<img src={`${assets}/images/decorations/${method.icon}`} alt="" class="h-6 w-6" />
+							<img src={`${assets}/images/${method.icon}`} alt="" class="h-6 w-6" />
 						</span>
 						<span>
 							<span class="block text-sm font-medium text-ink/60">{method.label}</span>

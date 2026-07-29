@@ -4,7 +4,7 @@
 
 	const reasons = [
 		{
-			icon: 'decorations/starfish.svg',
+			icon: 'starfish.svg',
 			text: "your home is getting a quality clean we're proud of. We guarantee it!"
 		},
 		{
