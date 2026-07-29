@@ -5,30 +5,30 @@
 	const checkbox = `${assets}/images/checkbox.png`;
 
 	const items = [
-		'Wipe Counters & Cabinet Doors',
 		'Clean Backsplash',
 		'Shine Appliances & Sink',
 		'Wipe Hood-Range',
-		'Clean Microwave Inside/Out',
 		'Dust Light Fixtures',
 		'Clean Table & Chairs',
 		'Dust Furniture',
 		'Dust & Spot Clean Glass',
-		'Make Beds/Change Linens',
+		'Make & Change Beds',
 		'Clean Mirrors',
-		'Dust Nightstands/Dressers',
-		'Vacuum',
-		'Mop',
+		'Wipe Counters',
+		'Dust Bedroom Furniture',
+		'Vacuum Floors & Rugs',
+		'Mop Hard Floors',
 		'Fluff Pillows',
 		'Re-stage Bed',
 		'Dust Ceiling Fans',
 		'Dust Baseboards',
+		'Clean Microwave',
 		'Empty Garbage',
-		'Clean Counters, Sink, & Cabinets',
+		'Clean Vanity & Sink',
 		'Polish Fixtures',
-		'Clean Toilet Inside & Out',
-		'Clean Shower And/Or Bathtub',
-		'Straighten or Replace Towels'
+		'Clean Toilet',
+		'Clean Shower & Tub',
+		'Refresh Towels'
 	];
 </script>
 
@@ -41,7 +41,7 @@
 
 	<div class="mt-10 rounded-card border border-gray-100 bg-white p-6 shadow-md sm:p-10">
 		<ul
-			class="mx-auto grid max-w-4xl grid-cols-1 gap-x-8 gap-y-2.5 font-sans text-base sm:grid-cols-2 lg:grid-cols-3 lg:text-lg"
+			class="mx-auto grid max-w-4xl grid-cols-1 gap-x-8 gap-y-2.5 text-base sm:grid-cols-2 lg:grid-cols-3 lg:text-lg"
 		>
 			{#each items as item}
 				<li class="flex items-center gap-3">
