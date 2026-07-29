@@ -3,6 +3,7 @@
 	import { facebook } from '$lib/site';
 
 	let navActive = $state(false);
+	let navEl = $state<HTMLElement>();
 
 	const links = [
 		{ href: `${base}/`, label: 'Home' },
@@ -15,9 +16,18 @@
 	function close() {
 		navActive = false;
 	}
+
+	// Close the mobile menu when tapping anywhere outside the nav.
+	function onWindowClick(event: MouseEvent) {
+		if (navActive && navEl && !navEl.contains(event.target as Node)) {
+			close();
+		}
+	}
 </script>
 
-<nav class="sticky top-0 z-50 bg-white shadow-sm" aria-label="main navigation">
+<svelte:window onclick={onWindowClick} />
+
+<nav bind:this={navEl} class="sticky top-0 z-50 bg-white shadow-sm" aria-label="main navigation">
 	<div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-2">
 		<!-- Brand -->
 		<a href={`${base}/`} class="flex items-center" onclick={close}>
