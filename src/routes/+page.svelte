@@ -8,6 +8,7 @@
 	import Banner from '$lib/Banner.svelte';
 	import HomeShowcase from '$lib/HomeShowcase.svelte';
 	import Carousel from '$lib/Carousel.svelte';
+	import Reviews from '$lib/Reviews.svelte';
 	import Services from '$lib/Services.svelte';
 </script>
 
@@ -31,6 +32,7 @@
 
 <HomeShowcase />
 <Carousel />
+<Reviews />
 
 <Banner>
 	<p class="great-vibes text-4xl sm:text-5xl">
