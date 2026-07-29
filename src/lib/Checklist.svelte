@@ -32,7 +32,7 @@
 	];
 </script>
 
-<section id="services" class="mx-auto max-w-6xl px-4 py-20 sm:py-24">
+<section id="checklist" class="mx-auto max-w-6xl px-4 py-20 sm:py-24">
 	<SectionHeading
 		eyebrow="What we do"
 		title="Maintenance Cleaning Checklist"

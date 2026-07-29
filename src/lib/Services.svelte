@@ -17,11 +17,23 @@
 		{
 			q: 'What is Client Pet Sitting?',
 			a: 'If you are already a client we can take care of your pet while away. We can do in-home or drop-in care. (We also take client referrals for pet sitting as well.)'
+		},
+		{
+			q: 'What is Client House Sitting?',
+			a: 'If you are already a client we can watch over your home while you are away — checking in and keeping things cared for until you return. (We also take client referrals for house sitting as well.)'
+		},
+		{
+			q: 'What are Client Small Repairs?',
+			a: 'We now offer small repair jobs for our clients, specializing in small plumbing work — leaky faucets, running toilets, and other minor fixes around the home.'
+		},
+		{
+			q: 'What is our Laundry Service?',
+			a: "Wash, dry, and fold — we can take care of laundry as part of your clean or as its own service. After all, it's in our name: Dirty Beach Laundry and Cleaning!"
 		}
 	];
 </script>
 
-<section class="mx-auto max-w-3xl px-4 py-20 sm:py-24">
+<section id="services" class="mx-auto max-w-3xl px-4 py-20 sm:py-24">
 	<SectionHeading eyebrow="Good to know" title="Explanation of our services" />
 
 	<div
