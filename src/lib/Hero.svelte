@@ -26,7 +26,7 @@
 			<img
 				src={logoCircle}
 				alt="Dirty Beach Cleaning"
-				class="mb-6 h-32 w-32 rounded-full shadow-md sm:h-40 sm:w-40"
+				class="mb-6 h-32 w-32 rounded-full shadow-md sm:h-40 sm:w-40 lg:hidden"
 			/>
 
 			<p class="great-vibes text-3xl text-info sm:text-4xl">Beachy clean, every time</p>
