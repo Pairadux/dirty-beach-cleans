@@ -14,8 +14,8 @@
 </script>
 
 <Seo
-	title="Dirty Beach Cleaning | Home"
-	description="Professional residential, vacation rental, and small business cleaning in Franklin and Wakulla counties. Licensed, insured, and locally trusted."
+	title="Dirty Beach Cleaning | House Cleaning in Wakulla & Franklin"
+	description="Residential, vacation rental & small business cleaning across Franklin & Wakulla counties. Licensed, insured & local."
 />
 
 <Hero />

@@ -10,8 +10,8 @@
 </script>
 
 <Seo
-	title="Dirty Beach | Request a Free Quote"
-	description="Request a free cleaning quote from Dirty Beach Cleaning. Tell us about your home or vacation rental and we'll respond within 24 hours."
+	title="Dirty Beach Cleaning | Request a Free Cleaning Quote"
+	description="Tell us about your home or vacation rental and we'll send a free cleaning quote within 24 hours."
 />
 
 <section class="bg-info px-4 py-16 text-center text-white">

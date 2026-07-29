@@ -36,8 +36,8 @@
 </script>
 
 <Seo
-	title="Dirty Beach | Contact"
-	description="Contact Dirty Beach Cleaning — call, text, email, or message us on Facebook. Serving Franklin and Wakulla counties, with responses within 24 hours."
+	title="Dirty Beach Cleaning | Contact Us — Wakulla & Franklin, FL"
+	description="Call, text, email, or message us on Facebook. Serving Franklin & Wakulla counties — we respond within 24 hours."
 />
 
 <section class="bg-info px-4 py-20 text-center text-white">
