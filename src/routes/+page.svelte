@@ -7,6 +7,7 @@
 	import Reasons from '$lib/Reasons.svelte';
 	import Banner from '$lib/Banner.svelte';
 	import Divider from '$lib/Divider.svelte';
+	import QuoteCta from '$lib/QuoteCta.svelte';
 	import HomeShowcase from '$lib/HomeShowcase.svelte';
 	import Carousel from '$lib/Carousel.svelte';
 	import Reviews from '$lib/Reviews.svelte';
@@ -60,3 +61,5 @@
 <Divider />
 
 <Reviews />
+
+<QuoteCta />
