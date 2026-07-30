@@ -23,7 +23,7 @@
 	];
 </script>
 
-<section id="reviews" class="bg-gradient-to-b from-white to-info/10 px-4 py-20 sm:py-24">
+<section id="reviews" class="px-4 py-20 sm:py-24">
 	<div class="mx-auto max-w-6xl">
 		<SectionHeading
 			eyebrow="Kind words"

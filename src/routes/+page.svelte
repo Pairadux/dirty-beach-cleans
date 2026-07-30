@@ -21,17 +21,30 @@
 <Hero />
 <Bio />
 <About />
-<Services />
-<Checklist />
-<Reasons />
+
+<!-- Alternating tinted bands separate the white sections; banding lives here so
+     reordering sections keeps the rhythm intact. -->
+<div class="bg-info/10">
+	<Services />
+</div>
 
 <Banner>
 	<p class="great-vibes text-4xl sm:text-5xl">We keep you<br class="sm:hidden" /> Beachy Clean!</p>
 </Banner>
 
-<HomeShowcase />
+<Checklist />
+
+<div class="bg-info/10">
+	<Reasons />
+</div>
+
 <Carousel />
-<Reviews />
+
+<div class="bg-info/10">
+	<Reviews />
+</div>
+
+<HomeShowcase />
 
 <Banner>
 	<p class="great-vibes text-4xl sm:text-5xl">
