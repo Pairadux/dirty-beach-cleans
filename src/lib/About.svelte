@@ -19,8 +19,8 @@
 
 		<!-- Story -->
 		<div>
-			<SectionHeading eyebrow="Meet the owner" title="The heart behind Dirty Beach" align="left" />
-			<div class="mt-5 space-y-4 text-lg text-ink/80">
+			<SectionHeading eyebrow="Meet the Owner" title="The &hearts; behind Dirty Beach" align="left" />
+			<div class="mt-5 space-y-4 text-lg text-ink/80 italic">
 				<p>
 					Dirty Beach Cleaning isn't a faceless service — it's <strong class="text-ink-strong"
 						>Julie</strong

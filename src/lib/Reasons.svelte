@@ -29,7 +29,7 @@
 				<span class="flex h-20 w-20 items-center justify-center rounded-full bg-info/10">
 					<img src={`${assets}/images/${reason.icon}`} alt="" class="h-12 drop-shadow" />
 				</span>
-				<p class="text-base lg:text-lg">{reason.text}</p>
+				<p class="text-base lg:text-lg italic">{reason.text}</p>
 			</div>
 		{/each}
 	</div>

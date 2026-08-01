@@ -14,7 +14,7 @@
 	description="Tell us about your home or vacation rental and we'll send a free cleaning quote within 24 hours."
 />
 
-<section class="bg-info px-4 py-16 text-center text-white">
+<section class="bg-brand px-4 py-16 text-center text-white">
 	<h1 class="great-vibes text-4xl sm:text-5xl">Request a Free Quote</h1>
 	<p class="mx-auto mt-3 max-w-xl text-lg">
 		Fill out the form below and we'll contact you within 24 hours with an estimate or to schedule a

@@ -73,7 +73,7 @@
 {/snippet}
 
 <section id="services" class="mx-auto max-w-6xl px-4 py-20 sm:py-24">
-	<SectionHeading eyebrow="What we offer" title="Our Services" />
+	<SectionHeading eyebrow="What we offer..." title="Our Most Popular Services" />
 
 	<div class="mt-10 grid gap-6 sm:grid-cols-2">
 		{#each core as service}

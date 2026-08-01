@@ -6,19 +6,19 @@
 	// Facebook page) before this section goes live. Do not deploy as-is.
 	const reviews = [
 		{
-			quote: 'Placeholder review — replace with a real client quote before deploying.',
-			name: 'Client Name',
-			detail: 'Vacation rental owner'
+			quote: 'If I could make this a million stars I would! Hard working, kind, loyal, all around great people. They go above and beyond the job. Absolutely adore them!',
+			name: 'Shawna & John S.',
+			detail: 'Vacation Rental Owner'
 		},
 		{
-			quote: 'Placeholder review — replace with a real client quote before deploying.',
-			name: 'Client Name',
-			detail: 'Residential client'
+			quote: 'The folks at Dirty Beach cleaning are awesome. They fit us in quickly, and did the most amazing job cleaning our unit. Don’t hesitate to reach out to Julie and her team. 5 stars all the way around.',
+			name: 'Vicki R.',
+			detail: 'Residential Deep Clean'
 		},
 		{
-			quote: 'Placeholder review — replace with a real client quote before deploying.',
-			name: 'Client Name',
-			detail: 'Airbnb host'
+			quote: 'I have NEVER had anyone clean my house as well as Dirty Beach. My home is so peaceful and it feels like a huge stress has been taken off me. I’m very grateful!',
+			name: 'Kiersten S.',
+			detail: 'Residential Deep Clean / Organize'
 		}
 	];
 </script>

@@ -27,7 +27,7 @@
 	];
 
 	const trust = [
-		'Licensed & insured',
+		'Licensed & Insured',
 		'Google Verified business',
 		'Best Service Provider Nominee — Wakulla Co. 2025',
 		'Reliable, detailed & trusted local cleaners',
@@ -40,7 +40,7 @@
 	description="Call, text, email, or message us on Facebook. Serving Franklin & Wakulla counties — we respond within 24 hours."
 />
 
-<section class="bg-info px-4 py-20 text-center text-white">
+<section class="bg-brand px-4 py-20 text-center text-white">
 	<p class="great-vibes text-3xl text-white/90 sm:text-4xl">We'd love to hear from you</p>
 	<h1 class="mt-1 text-4xl font-bold sm:text-5xl">Get in Touch</h1>
 </section>
@@ -124,7 +124,7 @@
 	</div>
 </section>
 
-<section class="bg-info px-4 py-16 text-center text-white">
+<section class="bg-brand px-4 py-16 text-center text-white">
 	<p class="great-vibes text-3xl sm:text-4xl">Prefer a detailed estimate?</p>
 	<p class="mx-auto mt-2 max-w-xl text-lg">
 		Tell us about your home and we'll send a free quote within 24 hours.
@@ -132,7 +132,7 @@
 	<a
 		href={`${base}/quote`}
 		data-sveltekit-reload
-		class="mt-6 inline-block rounded-full bg-white px-8 py-3 font-bold text-info shadow-lg transition-colors hover:bg-white/90"
+		class="mt-6 inline-block rounded-full bg-white px-8 py-3 font-bold text-brand-600 shadow-lg transition-colors hover:bg-white/90"
 	>
 		Request a Free Quote
 	</a>

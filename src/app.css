@@ -10,6 +10,8 @@
 	--color-info-600: #5a6bf0; /* darker, for hovers */
 	--color-primary: #00d1b2; /* hsl(171 100% 41%) — turquoise CTA (Bulma is-primary) */
 	--color-primary-600: #00b89c;
+	--color-brand: #20b2aa; /* brand teal — full-bleed CTA/quote bands */
+	--color-brand-600: #167e79; /* darker teal, legible as text on white */
 	--color-ink: #404654; /* hsl(221 14% 29%) — default body text */
 	--color-ink-strong: #2b2f38; /* headings */
 

@@ -8,8 +8,8 @@
 
 	// Trust factors echoed from her Facebook profile.
 	const trust = [
-		'Licensed & insured',
-		'Locally owned — serving since 2021',
+		'Licensed & Insured',
+		'Locally owned / operated <br /> Since 2021',
 		'Google Verified business',
 		'Best Service Provider Nominee — Wakulla Co. 2025',
 		'Reliable, detailed & trusted local cleaners',
@@ -29,13 +29,13 @@
 				class="mb-6 h-32 w-32 rounded-full shadow-md sm:h-40 sm:w-40 lg:hidden"
 			/>
 
-			<p class="great-vibes text-3xl text-info sm:text-4xl">Beachy clean, every time</p>
+			<p class="great-vibes text-3xl text-info sm:text-4xl">Beachy clean, every time!</p>
 			<h1 class="mt-1 text-4xl font-bold leading-tight text-ink-strong sm:text-5xl">
 				Spotless homes,<br />stress-free living.
 			</h1>
 
-			<p class="mt-4 max-w-md text-lg text-ink/80">
-				Professional residential, vacation rental &amp; small business cleaning across Franklin and
+			<p class="mt-4 max-w-md text-lg text-ink/80 italic">
+				Professional Residential &amp; Vacation Rental cleaning across Franklin and
 				Wakulla counties — weekly, bi-weekly, monthly, or a one-time deep clean.
 			</p>
 
@@ -72,7 +72,8 @@
 								clip-rule="evenodd"
 							/>
 						</svg>
-						<span>{item}</span>
+						<!-- Items are hardcoded above, so inline markup (e.g. <br />) is safe to render. -->
+						<span>{@html item}</span>
 					</li>
 				{/each}
 			</ul>
