@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  /thank-you is intentionally absent: it is noindex and only reachable after a
+  form submission. It is not disallowed in robots.txt either — blocking it would
+  stop crawlers from ever reading that noindex tag.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url>
+		<loc>https://www.dirtybeachcleans.com/</loc>
+		<changefreq>monthly</changefreq>
+		<priority>1.0</priority>
+	</url>
+	<url>
+		<loc>https://www.dirtybeachcleans.com/quote</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.8</priority>
+	</url>
+	<url>
+		<loc>https://www.dirtybeachcleans.com/contact</loc>
+		<changefreq>monthly</changefreq>
+		<priority>0.8</priority>
+	</url>
+</urlset>
