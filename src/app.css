@@ -1,17 +1,21 @@
 @import 'tailwindcss';
 
 /*
-  Brand tokens carried over from the previous Bulma theme so the Tailwind
-  rebuild matches the look we had already dialed in (not the older raw-Tailwind
-  archive). Values are the resolved colors Bulma was computing from our overrides.
+  Client brand palette: a single teal hue at two values, replacing the earlier
+  periwinkle/turquoise/teal mix. The split is by *function*, not by size:
+
+    brand   — surfaces only (tints, gradient washes, glows). #20b2aa is only
+              2.62:1 against white, so nothing legible may sit on or in it at
+              full strength; use brand-deep for any band that carries copy.
+    primary — ink and interaction (text, links, buttons, icons, borders, rings).
+              #00827f clears 4.5:1 both as text on white and under white text,
+              so it needs no light/dark variant.
 */
 @theme {
-	--color-info: #7585ff; /* hsl(233 100% 73%) — section blue (Bulma is-info) */
-	--color-info-600: #5a6bf0; /* darker, for hovers */
-	--color-primary: #00d1b2; /* hsl(171 100% 41%) — turquoise CTA (Bulma is-primary) */
-	--color-primary-600: #00b89c;
-	--color-brand: #20b2aa; /* brand teal — full-bleed CTA/quote bands */
-	--color-brand-600: #167e79; /* darker teal, legible as text on white */
+	--color-brand: #20b2aa; /* client teal — tints, washes, glows */
+	--color-brand-deep: #0e7c78; /* full-bleed bands — 5.03:1 under white text */
+	--color-primary: #00827f; /* client teal — interactive/ink, 4.67:1 both ways */
+	--color-primary-600: #006663; /* hover/active — 6.82:1 */
 	--color-ink: #404654; /* hsl(221 14% 29%) — default body text */
 	--color-ink-strong: #2b2f38; /* headings */
 

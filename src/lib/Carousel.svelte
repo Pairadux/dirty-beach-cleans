@@ -89,7 +89,7 @@
 
 	<p class="mt-8 text-center text-lg text-ink/80">
 		Want to see more?
-		<a href={facebook} class="font-semibold text-info transition-colors hover:text-info-600">
+		<a href={facebook} class="font-semibold text-primary transition-colors hover:text-primary-600">
 			Follow us on Facebook
 		</a>
 		for our latest cleans.

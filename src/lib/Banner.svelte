@@ -4,6 +4,6 @@
 	let { children }: { children: Snippet } = $props();
 </script>
 
-<section class="bg-brand px-4 py-16 text-center text-white">
+<section class="bg-brand-deep px-4 py-16 text-center text-white">
 	{@render children()}
 </section>

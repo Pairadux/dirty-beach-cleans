@@ -79,7 +79,7 @@
 		{#each core as service}
 			<div class="flex gap-5 rounded-card border border-gray-100 bg-white p-7 shadow-md">
 				<span
-					class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-info/10 text-info"
+					class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-brand/10 text-primary"
 				>
 					{@render icon(service.icon, 'h-7 w-7')}
 				</span>
@@ -91,16 +91,16 @@
 		{/each}
 	</div>
 
-	<div class="mt-8 rounded-card border border-info/20 bg-info/5 p-8">
+	<div class="mt-8 rounded-card border border-brand/20 bg-brand/5 p-8">
 		<div class="text-center">
-			<p class="great-vibes text-2xl text-info sm:text-3xl">Already a client?</p>
+			<p class="great-vibes text-2xl text-primary sm:text-3xl">Already a client?</p>
 			<h3 class="mt-1 text-xl font-bold text-ink-strong">Extra services just for you</h3>
 		</div>
 		<div class="mt-8 grid gap-8 sm:grid-cols-3">
 			{#each perks as service}
 				<div class="flex flex-col items-center gap-2 text-center">
 					<span
-						class="flex h-12 w-12 items-center justify-center rounded-full bg-white text-info shadow-sm"
+						class="flex h-12 w-12 items-center justify-center rounded-full bg-white text-primary shadow-sm"
 					>
 						{@render icon(service.icon, 'h-6 w-6')}
 					</span>

@@ -16,7 +16,7 @@
 
 <div class={align === 'center' ? 'text-center' : 'text-left'}>
 	{#if eyebrow}
-		<p class="great-vibes text-2xl sm:text-3xl {light ? 'text-white/90' : 'text-info'}">
+		<p class="great-vibes text-2xl sm:text-3xl {light ? 'text-white/90' : 'text-primary'}">
 			{eyebrow}
 		</p>
 	{/if}

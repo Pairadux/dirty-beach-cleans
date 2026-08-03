@@ -45,7 +45,7 @@
 	const bathroomOptions = ['1', '1.5', '2', '2.5', '3', '3.5', '4+'];
 
 	const inputClass =
-		'w-full rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-ink focus:border-info focus:outline-none focus:ring-2 focus:ring-info/30';
+		'w-full rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-ink focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/30';
 	const labelClass = 'mb-1 block text-sm font-medium text-ink/80';
 </script>
 
@@ -71,7 +71,8 @@
 	<!-- 1. Contact Information -->
 	<div class="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm">
 		<h3 class="mb-5 flex items-center gap-3 text-lg font-bold text-ink-strong">
-			<span class="flex h-7 w-7 items-center justify-center rounded-full bg-info text-sm text-white"
+			<span
+				class="flex h-7 w-7 items-center justify-center rounded-full bg-primary text-sm text-white"
 				>1</span
 			>
 			Contact Information
@@ -130,7 +131,8 @@
 	<!-- 2. Property Details -->
 	<div class="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm">
 		<h3 class="mb-5 flex items-center gap-3 text-lg font-bold text-ink-strong">
-			<span class="flex h-7 w-7 items-center justify-center rounded-full bg-info text-sm text-white"
+			<span
+				class="flex h-7 w-7 items-center justify-center rounded-full bg-primary text-sm text-white"
 				>2</span
 			>
 			Property Details
@@ -196,7 +198,8 @@
 	<!-- 3. Cleaning Details -->
 	<div class="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm">
 		<h3 class="mb-5 flex items-center gap-3 text-lg font-bold text-ink-strong">
-			<span class="flex h-7 w-7 items-center justify-center rounded-full bg-info text-sm text-white"
+			<span
+				class="flex h-7 w-7 items-center justify-center rounded-full bg-primary text-sm text-white"
 				>3</span
 			>
 			Cleaning Details
@@ -263,7 +266,8 @@
 	<!-- 4. Preferred Appointment -->
 	<div class="rounded-2xl border border-gray-100 bg-white p-6 shadow-sm">
 		<h3 class="mb-5 flex items-center gap-3 text-lg font-bold text-ink-strong">
-			<span class="flex h-7 w-7 items-center justify-center rounded-full bg-info text-sm text-white"
+			<span
+				class="flex h-7 w-7 items-center justify-center rounded-full bg-primary text-sm text-white"
 				>4</span
 			>
 			Preferred Appointment

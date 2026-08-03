@@ -6,17 +6,20 @@
 	// Facebook page) before this section goes live. Do not deploy as-is.
 	const reviews = [
 		{
-			quote: 'If I could make this a million stars I would! Hard working, kind, loyal, all around great people. They go above and beyond the job. Absolutely adore them!',
+			quote:
+				'If I could make this a million stars I would! Hard working, kind, loyal, all around great people. They go above and beyond the job. Absolutely adore them!',
 			name: 'Shawna & John S.',
 			detail: 'Vacation Rental Owner'
 		},
 		{
-			quote: 'The folks at Dirty Beach cleaning are awesome. They fit us in quickly, and did the most amazing job cleaning our unit. Don’t hesitate to reach out to Julie and her team. 5 stars all the way around.',
+			quote:
+				'The folks at Dirty Beach cleaning are awesome. They fit us in quickly, and did the most amazing job cleaning our unit. Don’t hesitate to reach out to Julie and her team. 5 stars all the way around.',
 			name: 'Vicki R.',
 			detail: 'Residential Deep Clean'
 		},
 		{
-			quote: 'I have NEVER had anyone clean my house as well as Dirty Beach. My home is so peaceful and it feels like a huge stress has been taken off me. I’m very grateful!',
+			quote:
+				'I have NEVER had anyone clean my house as well as Dirty Beach. My home is so peaceful and it feels like a huge stress has been taken off me. I’m very grateful!',
 			name: 'Kiersten S.',
 			detail: 'Residential Deep Clean / Organize'
 		}
@@ -36,7 +39,7 @@
 				<figure
 					class="flex flex-col rounded-card border border-gray-100 bg-white p-8 shadow-md transition-transform hover:-translate-y-1"
 				>
-					<div class="flex gap-1 text-primary" aria-label="5 out of 5 stars">
+					<div class="flex gap-1 text-amber-500" aria-label="5 out of 5 stars">
 						{#each Array(5) as _}
 							<svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
 								<path
@@ -56,7 +59,10 @@
 
 		<p class="mt-8 text-center text-ink/80">
 			Read more on our
-			<a href={facebook} class="font-semibold text-info transition-colors hover:text-info-600">
+			<a
+				href={facebook}
+				class="font-semibold text-primary transition-colors hover:text-primary-600"
+			>
 				Facebook page
 			</a>
 		</p>

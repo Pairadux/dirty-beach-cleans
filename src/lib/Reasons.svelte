@@ -26,7 +26,7 @@
 			<div
 				class="flex flex-col items-center gap-4 rounded-card border border-gray-100 bg-white p-8 text-center shadow-md transition-transform hover:-translate-y-1"
 			>
-				<span class="flex h-20 w-20 items-center justify-center rounded-full bg-info/10">
+				<span class="flex h-20 w-20 items-center justify-center rounded-full bg-brand/10">
 					<img src={`${assets}/images/${reason.icon}`} alt="" class="h-12 drop-shadow" />
 				</span>
 				<p class="text-base lg:text-lg italic">{reason.text}</p>

@@ -40,7 +40,7 @@
 	description="Call, text, email, or message us on Facebook. Serving Franklin & Wakulla counties — we respond within 24 hours."
 />
 
-<section class="bg-brand px-4 py-20 text-center text-white">
+<section class="bg-brand-deep px-4 py-20 text-center text-white">
 	<p class="great-vibes text-3xl text-white/90 sm:text-4xl">We'd love to hear from you</p>
 	<h1 class="mt-1 text-4xl font-bold sm:text-5xl">Get in Touch</h1>
 </section>
@@ -58,7 +58,7 @@
 						class="flex items-center gap-4 rounded-2xl border border-gray-100 bg-white p-5 shadow-sm transition-all hover:-translate-y-0.5 hover:shadow-md"
 					>
 						<span
-							class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-info/10"
+							class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-brand/10"
 						>
 							<img src={`${assets}/images/${method.icon}`} alt="" class="h-6 w-6" />
 						</span>
@@ -88,14 +88,14 @@
 
 		<!-- Brand + trust -->
 		<div
-			class="flex flex-col items-center rounded-card bg-gradient-to-br from-info/15 to-white p-8 text-center shadow-sm sm:p-10"
+			class="flex flex-col items-center rounded-card bg-gradient-to-br from-brand/15 to-white p-8 text-center shadow-sm sm:p-10"
 		>
 			<img
 				src={`${assets}/images/logo-circle.jpg`}
 				alt="Dirty Beach Cleaning"
 				class="h-32 w-32 rounded-full shadow-md"
 			/>
-			<p class="great-vibes mt-4 text-3xl text-info">We keep you beachy clean</p>
+			<p class="great-vibes mt-4 text-3xl text-primary">We keep you beachy clean</p>
 
 			<ul class="mt-6 space-y-2.5 text-left text-ink/80">
 				{#each trust as item}
@@ -124,7 +124,7 @@
 	</div>
 </section>
 
-<section class="bg-brand px-4 py-16 text-center text-white">
+<section class="bg-brand-deep px-4 py-16 text-center text-white">
 	<p class="great-vibes text-3xl sm:text-4xl">Prefer a detailed estimate?</p>
 	<p class="mx-auto mt-2 max-w-xl text-lg">
 		Tell us about your home and we'll send a free quote within 24 hours.
@@ -132,7 +132,7 @@
 	<a
 		href={`${base}/quote`}
 		data-sveltekit-reload
-		class="mt-6 inline-block rounded-full bg-white px-8 py-3 font-bold text-brand-600 shadow-lg transition-colors hover:bg-white/90"
+		class="mt-6 inline-block rounded-full bg-white px-8 py-3 font-bold text-primary shadow-lg transition-colors hover:bg-white/90"
 	>
 		Request a Free Quote
 	</a>

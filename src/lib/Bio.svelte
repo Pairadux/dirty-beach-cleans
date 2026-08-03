@@ -4,7 +4,7 @@
 	const palm = `${assets}/images/palm-tree-bullet.svg`;
 </script>
 
-<section class="relative overflow-hidden bg-brand px-4 py-20 text-white sm:py-24">
+<section class="relative overflow-hidden bg-brand-deep px-4 py-20 text-white sm:py-24">
 	<div class="mx-auto flex max-w-4xl items-center justify-center gap-8">
 		<img src={palm} alt="" class="hidden h-24 w-24 drop-shadow-lg lg:block xl:h-28 xl:w-28" />
 

@@ -17,7 +17,7 @@
 	];
 </script>
 
-<section id="hero" class="relative overflow-hidden bg-gradient-to-b from-info/10 to-white">
+<section id="hero" class="relative overflow-hidden bg-gradient-to-b from-brand/10 to-white">
 	<div
 		class="mx-auto grid min-h-[calc(100svh-5rem)] max-w-6xl items-center gap-10 px-4 py-12 lg:grid-cols-2 lg:gap-12 lg:py-16"
 	>
@@ -29,14 +29,14 @@
 				class="mb-6 h-32 w-32 rounded-full shadow-md sm:h-40 sm:w-40 lg:hidden"
 			/>
 
-			<p class="great-vibes text-3xl text-info sm:text-4xl">Beachy clean, every time!</p>
+			<p class="great-vibes text-3xl text-primary sm:text-4xl">Beachy clean, every time!</p>
 			<h1 class="mt-1 text-4xl font-bold leading-tight text-ink-strong sm:text-5xl">
 				Spotless homes,<br />stress-free living.
 			</h1>
 
 			<p class="mt-4 max-w-md text-lg text-ink/80 italic">
-				Professional Residential &amp; Vacation Rental cleaning across Franklin and
-				Wakulla counties — weekly, bi-weekly, monthly, or a one-time deep clean.
+				Professional Residential &amp; Vacation Rental cleaning across Franklin and Wakulla counties
+				— weekly, bi-weekly, monthly, or a one-time deep clean.
 			</p>
 
 			<div class="mt-7 flex flex-col gap-3 sm:flex-row">
@@ -49,7 +49,7 @@
 				</a>
 				<a
 					href={phoneHref}
-					class="rounded-full border-2 border-info px-8 py-3 text-lg font-bold text-info transition-colors hover:bg-info hover:text-white"
+					class="rounded-full border-2 border-primary px-8 py-3 text-lg font-bold text-primary transition-colors hover:bg-primary hover:text-white"
 				>
 					Call/Text {phoneDisplay}
 				</a>
@@ -84,7 +84,7 @@
 
 			<a
 				href={facebook}
-				class="mt-6 inline-flex items-center gap-2 font-semibold text-info transition-colors hover:text-info-600"
+				class="mt-6 inline-flex items-center gap-2 font-semibold text-primary transition-colors hover:text-primary-600"
 			>
 				<svg class="h-5 w-5" viewBox="0 0 56.693 56.693" fill="currentColor" aria-hidden="true">
 					<path
@@ -97,7 +97,7 @@
 
 		<!-- Right: featured branded photo -->
 		<div class="relative mx-auto w-full max-w-xl">
-			<div class="absolute -inset-4 -z-10 rounded-[2.5rem] bg-info/20 blur-2xl"></div>
+			<div class="absolute -inset-4 -z-10 rounded-[2.5rem] bg-brand/20 blur-2xl"></div>
 			<img
 				src={heroPhoto}
 				alt="A clean, staged living room by Dirty Beach Cleaning"
