@@ -19,6 +19,8 @@
 <svelte:head>
 	<title>{title}</title>
 	<meta name="description" content={description} />
+	<!-- Collapses ?fbclid=… and www/non-www variants onto one indexable URL. -->
+	<link rel="canonical" href={url} />
 	<meta property="og:type" content="website" />
 	<meta property="og:site_name" content="Dirty Beach Cleaning" />
 	<meta property="og:title" content={title} />

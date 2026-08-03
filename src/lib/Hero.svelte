@@ -72,7 +72,7 @@
 								clip-rule="evenodd"
 							/>
 						</svg>
-						<!-- Items are hardcoded above, so inline markup (e.g. <br />) is safe to render. -->
+						<!-- eslint-disable-next-line svelte/no-at-html-tags -- items are hardcoded above, so inline markup (e.g. <br />) is safe to render -->
 						<span>{@html item}</span>
 					</li>
 				{/each}
