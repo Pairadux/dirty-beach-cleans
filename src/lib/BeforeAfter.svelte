@@ -18,7 +18,7 @@
 		{
 			slug: 'shower-pan',
 			title: 'Shower pan',
-			note: 'Plaster and caulk residue cleared out after a remodel.'
+			note: 'Post-construction dust and debris cleared from the pan and tile.'
 		},
 		{
 			slug: 'jacuzzi',
