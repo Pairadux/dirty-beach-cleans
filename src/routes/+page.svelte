@@ -10,6 +10,7 @@
 	import QuoteCta from '$lib/QuoteCta.svelte';
 	import HomeShowcase from '$lib/HomeShowcase.svelte';
 	import Carousel from '$lib/Carousel.svelte';
+	import BeforeAfter from '$lib/BeforeAfter.svelte';
 	import Reviews from '$lib/Reviews.svelte';
 	import Services from '$lib/Services.svelte';
 	import Seo from '$lib/Seo.svelte';
@@ -53,6 +54,10 @@
 </Banner>
 
 <Carousel />
+
+<Divider />
+
+<BeforeAfter />
 
 <Divider />
 

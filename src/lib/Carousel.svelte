@@ -6,7 +6,7 @@
 	import SectionHeading from './SectionHeading.svelte';
 
 	const slides = Array.from(
-		{ length: 11 },
+		{ length: 12 },
 		(_, i) => `${assets}/images/real-homes/home${i + 1}.jpeg`
 	);
 
