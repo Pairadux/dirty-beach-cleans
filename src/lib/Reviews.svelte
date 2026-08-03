@@ -2,8 +2,6 @@
 	import { facebook } from '$lib/site';
 	import SectionHeading from './SectionHeading.svelte';
 
-	// PLACEHOLDER entries — swap each one for a real client review (e.g. from the
-	// Facebook page) before this section goes live. Do not deploy as-is.
 	const reviews = [
 		{
 			quote:
